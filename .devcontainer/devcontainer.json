@@ -1,0 +1,59 @@
+{
+  "name": "ros_humble",
+  "dockerFile": "Dockerfile",
+  "runArgs": [
+    "--privileged",
+    "-v=/tmp/.X11-unix:/tmp/.X11-unix",
+    "-e=DISPLAY=${env:DISPLAY}",
+    "--ipc=host",
+    // (comment this out if you want to use virtual desktop)
+    "--network=host",
+    "-e=NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics" ,
+    "--gpus=all"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
+  "workspaceFolder": "/${localWorkspaceFolderBasename}",
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/ros/.bash_history,type=bind",
+    {
+      "source": "ros_humble-build-cache",
+      "target": "/home/ros/.cache",
+      "type": "volume"
+    },
+    {
+      "source": "/etc/localtime",
+      "target": "/etc/localtime",
+      "type": "bind"
+    }
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "ms-vscode.cpptools",
+        "yzhang.markdown-all-in-one",
+        "ms-python.python",
+        "ms-iot.vscode-ros",
+        "morningfrog.urdf-visualizer",
+        "dotjoshjohnson.xml",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {
+      "password": "vscode",
+      "webPort": 6080,
+      "vncPort": 5901
+    }
+  },
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop (Web)"
+    },
+    "5901": {
+      "label": "Desktop (VNC)"
+    }
+  }
+}
