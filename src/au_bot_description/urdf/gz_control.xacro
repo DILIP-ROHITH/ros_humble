@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<robot name="au_bot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<!-- differential plugin -->
+<gazebo>
+    <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
+
+    <!-- Misc configs-->
+    <alwaysOn>true</alwaysOn>
+    <legacyMode>false</legacyMode>
+    <updateRate>30</updateRate>
+    <rosDebugLevel>debug</rosDebugLevel>
+
+    <!-- Joints -->
+    <left_joint>lftw</left_joint>
+    <right_joint>rgtw</right_joint>
+
+    <!-- Wheel Information -->
+    <wheel_separation>0.133</wheel_separation>
+    <wheel_diameter>0.034</wheel_diameter>
+
+    <!-- Limits -->
+    <max_wheel_torque>200</max_wheel_torque>
+    <max_wheel_acceleration>1</max_wheel_acceleration>
+
+    <!-- topics  -->
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometrySource>world</odometrySource>
+
+    <!-- Frames -->
+    <odometry_frame>odom</odometry_frame>
+    <robot_base_frame>base_footprint</robot_base_frame>
+
+    <!-- outputs -->
+    <publishTf>true</publishTf>
+    <publish_odom>true</publish_odom>
+    <publish_odom_tf>true</publish_odom_tf>
+    <publish_wheel_tf>true</publish_wheel_tf>
+    <publishWheelJointState>true</publishWheelJointState>
+
+    </plugin>
+</gazebo>
+
+</robot>

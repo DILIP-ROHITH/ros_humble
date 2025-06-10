@@ -1,0 +1,62 @@
+running egg_info
+creating ../../build/au_bot_description/au_bot_description.egg-info
+writing ../../build/au_bot_description/au_bot_description.egg-info/PKG-INFO
+writing dependency_links to ../../build/au_bot_description/au_bot_description.egg-info/dependency_links.txt
+writing entry points to ../../build/au_bot_description/au_bot_description.egg-info/entry_points.txt
+writing requirements to ../../build/au_bot_description/au_bot_description.egg-info/requires.txt
+writing top-level names to ../../build/au_bot_description/au_bot_description.egg-info/top_level.txt
+writing manifest file '../../build/au_bot_description/au_bot_description.egg-info/SOURCES.txt'
+reading manifest file '../../build/au_bot_description/au_bot_description.egg-info/SOURCES.txt'
+writing manifest file '../../build/au_bot_description/au_bot_description.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /ros_humble/build/au_bot_description/build
+creating /ros_humble/build/au_bot_description/build/lib
+creating /ros_humble/build/au_bot_description/build/lib/au_bot_description
+copying au_bot_description/__init__.py -> /ros_humble/build/au_bot_description/build/lib/au_bot_description
+running install
+running install_lib
+creating /ros_humble/install/au_bot_description/lib/python3.10/site-packages/au_bot_description
+copying /ros_humble/build/au_bot_description/build/lib/au_bot_description/__init__.py -> /ros_humble/install/au_bot_description/lib/python3.10/site-packages/au_bot_description
+byte-compiling /ros_humble/install/au_bot_description/lib/python3.10/site-packages/au_bot_description/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /ros_humble/install/au_bot_description/share/ament_index
+creating /ros_humble/install/au_bot_description/share/ament_index/resource_index
+creating /ros_humble/install/au_bot_description/share/ament_index/resource_index/packages
+copying resource/au_bot_description -> /ros_humble/install/au_bot_description/share/ament_index/resource_index/packages
+copying package.xml -> /ros_humble/install/au_bot_description/share/au_bot_description
+creating /ros_humble/install/au_bot_description/share/au_bot_description/launch
+copying launch/localization.launch.py -> /ros_humble/install/au_bot_description/share/au_bot_description/launch
+copying launch/launch_robot.launch.py -> /ros_humble/install/au_bot_description/share/au_bot_description/launch
+copying launch/gazebo.launch.py -> /ros_humble/install/au_bot_description/share/au_bot_description/launch
+copying launch/navigation.launch.py -> /ros_humble/install/au_bot_description/share/au_bot_description/launch
+copying launch/display.launch.py -> /ros_humble/install/au_bot_description/share/au_bot_description/launch
+creating /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/sensor_plugin.xacro -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/materials.xacro -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/au_bot.xacro -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/gz_control.xacro -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/au_bot.trans -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/au_bot.gazebo -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+copying urdf/au_bot.ros2control -> /ros_humble/install/au_bot_description/share/au_bot_description/urdf
+creating /ros_humble/install/au_bot_description/share/au_bot_description/world
+copying world/test.world -> /ros_humble/install/au_bot_description/share/au_bot_description/world
+creating /ros_humble/install/au_bot_description/share/au_bot_description/meshes
+copying meshes/caster_1.stl -> /ros_humble/install/au_bot_description/share/au_bot_description/meshes
+copying meshes/right_wheel_1.stl -> /ros_humble/install/au_bot_description/share/au_bot_description/meshes
+copying meshes/base_link.stl -> /ros_humble/install/au_bot_description/share/au_bot_description/meshes
+copying meshes/left_wheel_1.stl -> /ros_humble/install/au_bot_description/share/au_bot_description/meshes
+copying meshes/lidar_1.stl -> /ros_humble/install/au_bot_description/share/au_bot_description/meshes
+creating /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/drive.rviz -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/twist_mux.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/controllers.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/gaz_ros2_ctl_use_sim.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/ros_gz_bridge_gazebo.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/nav2_params.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/mapper_params_online_async.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+copying config/gazebo_params.yaml -> /ros_humble/install/au_bot_description/share/au_bot_description/config
+running install_egg_info
+Copying ../../build/au_bot_description/au_bot_description.egg-info to /ros_humble/install/au_bot_description/lib/python3.10/site-packages/au_bot_description-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/ros_humble/build/au_bot_description/install.log'

@@ -1,0 +1,10 @@
+/ros_humble/build/serial/CMakeFiles/uninstall.dir
+/ros_humble/build/serial/CMakeFiles/serial_uninstall.dir
+/ros_humble/build/serial/CMakeFiles/serial.dir
+/ros_humble/build/serial/CMakeFiles/test.dir
+/ros_humble/build/serial/CMakeFiles/edit_cache.dir
+/ros_humble/build/serial/CMakeFiles/rebuild_cache.dir
+/ros_humble/build/serial/CMakeFiles/list_install_components.dir
+/ros_humble/build/serial/CMakeFiles/install.dir
+/ros_humble/build/serial/CMakeFiles/install/local.dir
+/ros_humble/build/serial/CMakeFiles/install/strip.dir

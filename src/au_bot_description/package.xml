@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+<name>au_bot_description</name>
+<version>0.0.0</version>
+<description>The au_bot_description package</description>
+<maintainer email="rohithkarella@gmail.com">rohith</maintainer>
+<license>Apache-2.0</license>
+
+  <depend>xacro</depend>
+  <depend>rviz2</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>joint_state_publisher</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>nav2_bringup</depend>
+  <depend>nav2_common</depend>
+  <depend>nav2_bt_navigator</depend>
+  <depend>nav2_controller</depend>
+  <depend>nav2_planner</depend>
+  <depend>nav2_map_server</depend>
+  <depend>nav2_recoveries</depend>
+  <depend>nav2_msgs</depend>
+  <depend>nav2_lifecycle_manager</depend>
+  <depend>behavior_tree_cpp_v3</depend>
+  <depend>rclpy</depend>              <!-- ROS2 Python client library -->
+  <depend>geometry_msgs</depend>      <!-- Message types for robot movement -->
+  <depend>sensor_msgs</depend>        <!-- Sensor message types -->
+  <depend>gazebo_ros</depend>         <!-- Gazebo simulation integration -->
+  <depend>tf2_ros</depend>            <!-- Transform library -->
+  <depend>urdf</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>rviz_common</exec_depend>
+  <exec_depend>rviz_default_plugins</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
